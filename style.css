@@ -10,6 +10,12 @@ body {
     font-family: Arial;
     line-height: 1.4;
 }
+iframe {
+    width: 100%;
+    border: none;
+    height: 450px;
+
+}
 div.cover{
     background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover ;
     height: 350px;
@@ -108,6 +114,7 @@ h2 {
 }
 .col60 {
     width: 60%;
+    padding-left: 15px;
 }
 .float-right {
     float: right;
@@ -127,8 +134,9 @@ div.vertical-bar {
     background-color: var(--color1);
     margin-right: 15px;
 }
-.col-portfolio {
-    width: 47%;
+table.col-portfolio {
+    display: inline-block;
+    width: 36%;
 }
 div.frame {
     background-color: white;
@@ -138,6 +146,11 @@ div.frame {
     margin-bottom: 5%;
     padding-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.frame img {
+    width: 35%; 
+    margin-top: 6%;
+    
 }
 
 /* PORTFOLIO */
@@ -191,4 +204,154 @@ div.portfolio-gray-section-1 {
     background: url(triangle2white.svg) no-repeat center bottom/100%;
     background-color: var(--color2);
     padding-bottom: 100px;
+}
+div.portfolio-section {
+    width: 50%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+div.portfolio-img-restaurant img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 60%;
+}
+div.portfolio-img-restaurant a.center {
+    display: block;
+    text-align: center;
+}
+
+/*Resposive designe: mobile */
+@media only screen and (max-width: 768px) {
+    img.cover-profile {
+        height: 90px;
+        margin-top: 75px;
+    }
+    h1 {
+        font-size: 38px;
+        margin-top: 6px;
+    }
+    .col40 {
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    .col60 {
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+    }
+    .float-right {
+        float: none;
+    }
+    div.text-with-vertical-line {
+        display: block;
+        text-align: center;
+        border-left: 4px solid var(--color1);
+        height: 40px;
+        display: block;    
+    }
+    iframe {
+        width: 100%;
+        border: none;
+        height: 250px;
+    }
+    table.col-portfolio {
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.frame {
+        background-color: white;
+        margin: 0px ;
+        padding: 0px ;
+        box-shadow: none;
+
+    }
+    div.frame img {
+        width: 70px;
+        margin-top: 50px;
+        margin-right: 6px;
+    }
+    div.portfolio-header {
+        height: 60px;
+    }
+    div.portfolio-header a.contact-button:hover {
+        color: white;
+        border: 2px solid white;
+        letter-spacing: normal;
+    }
+    p.portfolio-header-title {
+        text-align: left;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        padding-top: 12px;
+    }
+    div.portfolio-header a.contact-button {
+        color: var(--color1);
+        background-color: rgba(0, 0, 0, 0.459);
+        border: 2px solid var(--color1);
+        padding: 4px 8px;
+        text-decoration: none;
+        margin-top: 10px;
+        display: inline-block;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    h1.portfolio {
+        color:black;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    h2.portfolio {
+        font-weight: normal;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    div.portfolio-back a {
+        color: var(--color1);
+        position: absolute;
+        left: 10px;
+        top:90px;
+    }
+    
+    div.portfolio-gray-section-1 {
+        background: url(triangle2white.svg) no-repeat center bottom/100%;
+        background-color: var(--color2);
+        padding-bottom: 50px;
+    }
+    div.portfolio-section {
+        width: 50%;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        padding-bottom: 550px;
+    }
+    div.portfolio-img-restaurant img {
+        display: block;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        max-width: 60%;
+    }
+    div.portfolio-img-restaurant a.center {
+        display: block;
+        text-align: center;
+    }
 }
